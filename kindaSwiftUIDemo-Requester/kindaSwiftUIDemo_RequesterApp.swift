@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import kindaSwiftUI
 
 @main
 struct kindaSwiftUIDemo_RequesterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            KindaSwiftUIContentView {
+                NavigationStack {
+                    ContentView()
+                }
+            }
         }
     }
 }

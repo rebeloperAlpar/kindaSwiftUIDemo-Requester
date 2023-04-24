@@ -11,6 +11,10 @@
 		C9BE1A7329F672C1009CCE6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BE1A7229F672C1009CCE6D /* ContentView.swift */; };
 		C9BE1A7529F672C2009CCE6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BE1A7429F672C2009CCE6D /* Assets.xcassets */; };
 		C9BE1A7829F672C2009CCE6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9BE1A7729F672C2009CCE6D /* Preview Assets.xcassets */; };
+		C9BE1AAC29F67427009CCE6D /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BE1AAB29F67427009CCE6D /* Photo.swift */; };
+		C9BE1AAF29F682FC009CCE6D /* kindaSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C9BE1AAE29F682FC009CCE6D /* kindaSwiftUI */; };
+		C9BE1AB129F68948009CCE6D /* KindaSwiftUI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9BE1AB029F68948009CCE6D /* KindaSwiftUI-Info.plist */; };
+		C9BE1AB329F68AA7009CCE6D /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9BE1AB229F68AA7009CCE6D /* PhotosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		C9BE1A7229F672C1009CCE6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9BE1A7429F672C2009CCE6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9BE1A7729F672C2009CCE6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C9BE1AAB29F67427009CCE6D /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C9BE1AB029F68948009CCE6D /* KindaSwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KindaSwiftUI-Info.plist"; sourceTree = "<group>"; };
+		C9BE1AB229F68AA7009CCE6D /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9BE1AAF29F682FC009CCE6D /* kindaSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +61,9 @@
 			children = (
 				C9BE1A7029F672C1009CCE6D /* kindaSwiftUIDemo_RequesterApp.swift */,
 				C9BE1A7229F672C1009CCE6D /* ContentView.swift */,
+				C9BE1AB229F68AA7009CCE6D /* PhotosView.swift */,
+				C9BE1AAB29F67427009CCE6D /* Photo.swift */,
+				C9BE1AB029F68948009CCE6D /* KindaSwiftUI-Info.plist */,
 				C9BE1A7429F672C2009CCE6D /* Assets.xcassets */,
 				C9BE1A7629F672C2009CCE6D /* Preview Content */,
 			);
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = "kindaSwiftUIDemo-Requester";
+			packageProductDependencies = (
+				C9BE1AAE29F682FC009CCE6D /* kindaSwiftUI */,
+			);
 			productName = "kindaSwiftUIDemo-Requester";
 			productReference = C9BE1A6D29F672C1009CCE6D /* kindaSwiftUIDemo-Requester.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = C9BE1A6429F672C1009CCE6D;
+			packageReferences = (
+				C9BE1AAD29F682FC009CCE6D /* XCRemoteSwiftPackageReference "kindaSwiftUI" */,
+			);
 			productRefGroup = C9BE1A6E29F672C1009CCE6D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9BE1A7829F672C2009CCE6D /* Preview Assets.xcassets in Resources */,
+				C9BE1AB129F68948009CCE6D /* KindaSwiftUI-Info.plist in Resources */,
 				C9BE1A7529F672C2009CCE6D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9BE1AAC29F67427009CCE6D /* Photo.swift in Sources */,
 				C9BE1A7329F672C1009CCE6D /* ContentView.swift in Sources */,
 				C9BE1A7129F672C1009CCE6D /* kindaSwiftUIDemo_RequesterApp.swift in Sources */,
+				C9BE1AB329F68AA7009CCE6D /* PhotosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9BE1AAD29F682FC009CCE6D /* XCRemoteSwiftPackageReference "kindaSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloperAlpar/kindaSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9BE1AAE29F682FC009CCE6D /* kindaSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9BE1AAD29F682FC009CCE6D /* XCRemoteSwiftPackageReference "kindaSwiftUI" */;
+			productName = kindaSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9BE1A6529F672C1009CCE6D /* Project object */;
 }

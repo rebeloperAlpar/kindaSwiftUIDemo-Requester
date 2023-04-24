@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "kindaswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/rebeloperAlpar/kindaSwiftUI.git",
+      "state" : {
+        "revision" : "9f399efc582fde8a866d2cc3c8e1a66dea2355ac",
+        "version" : "1.5.1"
+      }
+    }
+  ],
+  "version" : 2
+}
